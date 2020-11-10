@@ -74,3 +74,6 @@ class Checker:
             return False  # If it is negative then we should return False
 
 ```
+- Then we can run the file and see if any tests fail
+- If they do, we can take a closer look using ```pytest -v```
+- But all of the tests are successful so there is no need to do so in this instance
