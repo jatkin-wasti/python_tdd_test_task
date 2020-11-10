@@ -10,6 +10,6 @@ class Checker:
     # Creating our positive method which checks if a number is positive or not
     def positive(self, val1):
         if val1 > 0:
-            return True
+            return True  # If it is positive then we should return True
         else:
-            return False
+            return False  # If it is negative then we should return False

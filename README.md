@@ -52,4 +52,25 @@ We look to see if the clean_div method returns True when we try to divide 10 by 
 10 with no remainder)
 - We also checks that the method returns False when it should, by checking its output when we divide 10 by 4
 ### Writing the class to be tested
--
+- First we'll create the class with the name ```Checker``` as that's what we've used in our testing file
+```
+class Checker:
+```
+- Then we'll create our methods to test, again these need to match the names used in the testing file but without the 
+"test_" prefix
+- In these methods we will simply return true if the conditions are met and false if they are not
+```
+    def clean_div(self, val1, val2):
+        if val1 % val2 == 0:
+            return True  # If there is no remainder after dividing then we should return True
+        else:
+            return False  # Otherwise we should return false
+
+    # Creating our positive method which checks if a number is positive or not
+    def positive(self, val1):
+        if val1 > 0:
+            return True  # If it is positive then we should return True 
+        else:
+            return False  # If it is negative then we should return False
+
+```
